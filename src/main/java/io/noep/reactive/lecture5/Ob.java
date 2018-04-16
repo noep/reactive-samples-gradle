@@ -1,6 +1,5 @@
 package io.noep.reactive.lecture5;
 
-import java.util.Iterator;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.concurrent.ExecutorService;
