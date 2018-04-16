@@ -29,4 +29,32 @@ RFP (Reactive Functional Programming)
 - reactivex.io
 
 
+## Reactive Streams
+스프링 리액티브 웹 개발 (2) - Operators
+
+- Publisher
+    - provider
+    - Publisher.subscribe(Subscriber)
+    - onSubscribe onNext* (onError | onComplete)?
+- Subscriber
+    - 주는 데이터를 구독하는 놈
+- Subscription
+
+- Processor
+
+
+## Operators
+- Publisher -> [Data1] -> Operator -> [Data2] -> Op2 -> [Data3] -> Subscriber
+- Stream api의 filter, map, reduce 같은 작업이네
+- Operator를 이용해 중간 데이터를 변조
+- 1. map (d1 -> f -> d2)
+위 -> 아래 downstream
+위 <- 아래 upstream
+pub -> [Data1] -> mapPub -> [Data2] -> logSub
+                <- subscribe(logSub)
+               -> onSubscribe(s)
+               -> onNext
+               -> onNext
+               -> onComplete
+
 

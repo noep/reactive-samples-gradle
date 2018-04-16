@@ -1,4 +1,4 @@
-package io.noep.reactive;
+package io.noep.reactive.lecture5;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
