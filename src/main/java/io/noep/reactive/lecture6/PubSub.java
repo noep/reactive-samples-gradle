@@ -32,8 +32,6 @@ public class PubSub {
         Publisher<StringBuilder> reducePub = reducePub(pub, new StringBuilder(), (a, b) -> a.append(b).append(","));
 //        reducePub.subscribe(logSub());
 
-
-
 //        mapPub.subscribe(logSub());
 //        mapPub2.subscribe(logSub());
         reducePub.subscribe(logSub());
